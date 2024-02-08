@@ -39,3 +39,11 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .dos-columnas{
+        display: grid; /*para tener las propiedades de los grid*/
+        grid-template-columns: repeat(2, 1fr); /*para tener 2 columnas de igual tamaño*/
+        column-gap: 2rem; /*para agregar espacio entre columnas en un grid*/
+    }
+}

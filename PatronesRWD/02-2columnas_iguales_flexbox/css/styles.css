@@ -39,3 +39,14 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .dos-columnas{
+        display: flex; /*todos los elementos hijos se muestran de izquierda a derecho por default*/
+        justify-content: space-between; /*justify permite alinear contenido de izquierda a derecha*/
+        /*gap: 2rem;*/ /*nueva forma de agregar espacio entre elementos, menos soportado por los navegadores*/
+    }
+
+    .entrada-blog {
+        flex: 0 0 calc( 50% - 1rem); /*funciona para agragar espacio entre las columnas*/
+    }
+}
