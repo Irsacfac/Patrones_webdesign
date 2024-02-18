@@ -1,4 +1,4 @@
-html {
+ html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
@@ -37,3 +37,25 @@ p {
 }
 
 /** CODIGO AQUI **/
+.contenedor {
+    max-width: 120rem;
+    /*width: 1200px; no se recomienda un width con una medida fija*/
+    width: 95%;
+    margin: 0 auto; /*ariba/abajo: 0 margen, izquierda/derecha: automatico*/
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor {
+        width: 60%;
+    }
+}
+
+img {
+    max-width: 100%; /*si la imagen es muy pequeña no laa fuerza a tomar el 100%*/
+}
